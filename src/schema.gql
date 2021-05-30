@@ -10,3 +10,7 @@ type Recipe {
 type Query {
   recipes: [Recipe!]!
 }
+
+type Mutation {
+  updateRecipe(title: String!): Recipe!
+}
