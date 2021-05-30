@@ -19,7 +19,7 @@ const recipeTable = [
 @Resolver(() => Recipe)
 export class RecipesResolver {
   @Query(() => [Recipe])
-  async recipe(): Promise<Recipe[]> {
+  async recipes(): Promise<Recipe[]> {
     return recipeTable;
   }
 }

@@ -13,7 +13,7 @@ class _AppModule {}
 
 @Module({
   imports: [
-    // _AppModule,
+    _AppModule,
     GraphQLModule.forRoot({
       // include: [RecipesModule],
       autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
