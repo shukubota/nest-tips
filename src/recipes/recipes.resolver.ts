@@ -28,8 +28,16 @@ export class RecipesResolver {
     return recipeTable;
   }
 
+  // playground
+  // query {
+  //   recipes {
+  //   id
+  // }
+
   @Mutation(() => Recipe)
-  async updateRecipe(@Args({ name: 'title', type: () => String }) title: string): Promise<Recipe> {
+  async updateRecipe(
+    @Args({ name: 'title', type: () => String }) title: string,
+  ): Promise<Recipe> {
     console.log(title);
     return updatedRecipe;
   }

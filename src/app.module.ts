@@ -22,9 +22,7 @@ class _AppModule {}
     }),
     RecipesModule,
   ],
-  controllers: [],
-  providers: [],
-  // controllers: [AppController],
-  // providers: [AppService],
+  controllers: [AppController],
+  providers: [AppService],
 })
 export class AppModule {}
