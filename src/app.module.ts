@@ -4,10 +4,11 @@ import { join } from 'path';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { RecipesModule } from './recipes/recipes.module';
+import { EventsGateway } from './events.gateway';
 
 @Module({
   controllers: [AppController],
-  providers: [AppService],
+  providers: [AppService, EventsGateway],
 })
 class _AppModule {}
 
